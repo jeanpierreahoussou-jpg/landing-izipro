@@ -108,6 +108,7 @@
   <div class="sidebar-overlay" id="sidebar-overlay"></div>
 
   <aside class="sidebar-drawer" id="sidebar-drawer" aria-label="Menu latéral">
+    <!-- Header (Always Visible) -->
     <div class="sidebar-header">
       <div class="sidebar-brand">
         <div class="logo-icon-sm">
@@ -117,7 +118,7 @@
         </div>
         <div class="brand-font">Livre<span>Express</span></div>
       </div>
-      <button class="sidebar-close-btn" id="sidebar-close" aria-label="Fermer le menu">
+      <button class="sidebar-close-btn" id="sidebar-close" aria-label="Fermer le menu" title="Fermer">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
           <line x1="18" y1="6" x2="6" y2="18"></line>
           <line x1="6" y1="6" x2="18" y2="18"></line>
@@ -125,86 +126,103 @@
       </button>
     </div>
 
-    <div class="sidebar-status-pill">
-      <span class="status-dot-pulse"></span>
-      <span>12 coursiers disponibles en direct à Abidjan</span>
-    </div>
-
-    <!-- Navigation Options -->
-    <nav class="sidebar-nav">
-      <p class="sidebar-section-title">Navigation</p>
-      <ul class="sidebar-links">
-        <li>
-          <a href="#hero" class="sidebar-link active">
-            <span class="sidebar-icon">🏠</span>
-            <span class="sidebar-text">Accueil</span>
-          </a>
-        </li>
-        <li>
-          <a href="#comment-ca-marche" class="sidebar-link">
-            <span class="sidebar-icon">⚡</span>
-            <span class="sidebar-text">Comment ça marche</span>
-          </a>
-        </li>
-        <li>
-          <a href="#simulateur" class="sidebar-link">
-            <span class="sidebar-icon">🧮</span>
-            <span class="sidebar-text">Calculateur de prix</span>
-          </a>
-        </li>
-        <li>
-          <a href="#tarifs" class="sidebar-link">
-            <span class="sidebar-icon">🏷️</span>
-            <span class="sidebar-text">Nos Tarifs</span>
-          </a>
-        </li>
-        <li>
-          <a href="#temoignages" class="sidebar-link">
-            <span class="sidebar-icon">⭐</span>
-            <span class="sidebar-text">Témoignages</span>
-          </a>
-        </li>
-        <li>
-          <a href="#contact" class="sidebar-link">
-            <span class="sidebar-icon">📞</span>
-            <span class="sidebar-text">Contact & Réseaux</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-
-    <!-- Theme Switcher Card in Sidebar -->
-    <div class="sidebar-theme-box">
-      <div class="sidebar-theme-info">
-        <span class="theme-title">Mode d'affichage</span>
-        <span class="theme-subtitle" id="sidebar-theme-label">Thème Sombre / Clair</span>
+    <!-- Scrollable Body for Links & Settings -->
+    <div class="sidebar-body">
+      <div class="sidebar-status-pill">
+        <span class="status-dot-pulse"></span>
+        <span>12 coursiers en patrouille à Abidjan</span>
       </div>
-      <button class="theme-toggle-btn" id="theme-toggle" aria-label="Basculer Mode Sombre / Clair" title="Basculer le thème">
-        <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="12" cy="12" r="5"></circle>
-          <line x1="12" y1="1" x2="12" y2="3"></line>
-          <line x1="12" y1="21" x2="12" y2="23"></line>
-          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-          <line x1="1" y1="12" x2="3" y2="12"></line>
-          <line x1="21" y1="12" x2="23" y2="12"></line>
-          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-        </svg>
-        <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-        </svg>
-      </button>
+
+      <!-- Navigation Options -->
+      <nav class="sidebar-nav">
+        <p class="sidebar-section-title">Navigation</p>
+        <ul class="sidebar-links">
+          <li>
+            <a href="#hero" class="sidebar-link active">
+              <span class="sidebar-icon">🏠</span>
+              <span class="sidebar-text">Accueil</span>
+            </a>
+          </li>
+          <li>
+            <a href="#comment-ca-marche" class="sidebar-link">
+              <span class="sidebar-icon">⚡</span>
+              <span class="sidebar-text">Comment ça marche</span>
+            </a>
+          </li>
+          <li>
+            <a href="#simulateur" class="sidebar-link">
+              <span class="sidebar-icon">🧮</span>
+              <span class="sidebar-text">Calculateur de prix</span>
+            </a>
+          </li>
+          <li>
+            <a href="#tarifs" class="sidebar-link">
+              <span class="sidebar-icon">🏷️</span>
+              <span class="sidebar-text">Nos Tarifs</span>
+            </a>
+          </li>
+          <li>
+            <a href="#temoignages" class="sidebar-link">
+              <span class="sidebar-icon">⭐</span>
+              <span class="sidebar-text">Témoignages</span>
+            </a>
+          </li>
+          <li>
+            <a href="#contact" class="sidebar-link">
+              <span class="sidebar-icon">📞</span>
+              <span class="sidebar-text">Contact & Réseaux</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Theme Switcher Card in Sidebar -->
+      <div class="sidebar-theme-box">
+        <div class="sidebar-theme-info">
+          <span class="theme-title">Mode d'affichage</span>
+          <span class="theme-subtitle" id="sidebar-theme-label">Thème Sombre / Clair</span>
+        </div>
+        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Basculer Mode Sombre / Clair" title="Basculer le thème">
+          <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
     </div>
 
-    <!-- Sidebar Bottom Actions -->
+    <!-- Sidebar Bottom Actions (Always Docked & Super Visible) -->
     <div class="sidebar-actions">
-      <button class="btn btn-primary" id="btn-open-modal-sidebar" style="width: 100%;">
-        ⚡ Commander une course express
-      </button>
-      <a href="https://wa.me/2250700001234?text=Bonjour%20Livre%20Express,%20je%20souhaite%20commander%20une%20course" target="_blank" class="btn btn-whatsapp" style="width: 100%; text-decoration: none;">
-        💬 WhatsApp Express
+      <!-- High-Visibility WhatsApp Action Button -->
+      <a href="https://wa.me/2250700001234?text=Bonjour%20Livre%20Express,%20je%20souhaite%20commander%20une%20course" target="_blank" class="sidebar-wa-card" aria-label="Commander via WhatsApp">
+        <div class="sidebar-wa-icon-wrap">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+          </svg>
+        </div>
+        <div class="sidebar-wa-content">
+          <div class="sidebar-wa-title">WhatsApp Express</div>
+          <div class="sidebar-wa-sub">
+            <span class="wa-dot-pulse"></span> Réponse en direct ⚡
+          </div>
+        </div>
+        <div class="sidebar-wa-arrow">➔</div>
       </a>
+
+      <button class="btn btn-primary" id="btn-open-modal-sidebar" style="width: 100%;">
+        ⚡ Réserver une livraison
+      </button>
+
       <a href="tel:+2250700001234" class="sidebar-direct-phone">
         📞 Appel direct : <strong>+225 07 00 00 12 34</strong>
       </a>
